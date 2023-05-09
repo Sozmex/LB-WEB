@@ -21,11 +21,11 @@ const About = () => {
   `);
   return (
     <div id="#about">
-      <div className="container mx-auto">
+      <div className="container mx-auto pt-2">
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-20 lg:py-18 py-12 items-center">
           <div className="lg:col-span-6 flex flex-col gap-6">
             <Eyebrow label="ABOUT US" />
-            <h2 className="font-display md:text-display-xl text-display-md font-normal pb-4">
+            <h2 className="font-display md:text-display-xl text-display-md font-normal pb-2">
              <span className="italic">AI Pioneers</span>{" "}
              for Legal Excellence
             </h2>

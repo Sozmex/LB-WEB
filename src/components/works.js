@@ -31,7 +31,7 @@ const Works = () => {
   return (
     <div id="#works">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-12 lg:py-28 py-12">
+        <div className="flex flex-col gap-12 lg:py-26 py-10">
           <div className="grid xl:grid-cols-12 grid-cols-1 xl:gap-8 gap-10 items-center">
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               <div className="flex flex-col gap-6">
