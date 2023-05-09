@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="grid lg:grid-cols-12 grid-cols-1 lg:gap-8 gap-12">
           <div className="lg:col-span-6 md:pr-24">
-            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-1 pt-1">
+            <h3 className="font-display md:text-display-lg text-display-sm font-normal pb-1">
               Lets get started!
             </h3>
             <a
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
           <div className="lg:col-span-6 flex flex-col gap-8 xl:pl-80 lg:pl-48">
             <div className="flex flex-col gap-2">
-              <p className="text-display-xs font-display font-normal pt-2">
+              <p className="text-display-xs font-display font-normal">
                 Toronto, Ontario
               </p>
               <p className="text-body-sm font-light text-neutral-900">
@@ -64,12 +64,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:my-20 my-10">
+        <div className="md:my-5 my-5">
           <hr className="text-neutral-300"></hr>
         </div>
-        <div className="flex lg:flex-row flex-col gap-8 lg:items-center justify-between md:mb-20 mb-10">
+        <div className="flex lg:flex-row flex-col gap-8 lg:items-center justify-between md:mb-6 mb-5">
           <div className="text-body-md font-light">
-            © {new Date().getFullYear()} Lawbotics - AI Pioneers for Legal Excellence{" "}
+            © {new Date().getFullYear()} Lawbotics - AI Firmware{" "}
           </div>
           <div className="flex lg:flex-row flex-col lg:items-center md:gap-6 gap-4">
             <div className="flex flex-row items-center opacity-70">
