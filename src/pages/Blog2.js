@@ -1,10 +1,9 @@
+/* Blog2.js */
 import React from "react";
 import { graphql } from "gatsby";
 
-import Bio from "../components/bio";
 import Layoutblog from "../components/layoutblog";
 import SEO from "../components/seo";
-import Button from "../components/button";
 import SearchPosts from "../components/searchPosts";
 
 class Blog2 extends React.Component {
@@ -15,7 +14,7 @@ class Blog2 extends React.Component {
     const localSearchBlog = data.localSearchBlog;
 
     return (
-      <Layoutblog location={this.props.location} title={siteTitle}>
+      <Layoutblog location={this.props.location} title={siteTitle} navigate={navigate}>
         <SEO title="All posts" />
         <SearchPosts
           posts={posts}
@@ -23,7 +22,6 @@ class Blog2 extends React.Component {
           navigate={navigate}
           location={location}
         />
-       
       </Layoutblog>
     );
   }
