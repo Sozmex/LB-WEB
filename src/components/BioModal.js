@@ -15,7 +15,7 @@ const BioModal = ({ onClose }) => {
           John Doe is a visionary leader with extensive experience in the field of technology and law. He has spent the last two decades honing his skills and knowledge, working with various organizations to improve their processes and create innovative solutions.
         </p>
         <p className="text-lg font-light mb-4">
-          As the CEO of Lawbotics, John has been instrumental in the development and growth of the company, leading a team of dedicated professionals who are passionate about creating a positive impact in the legal industry.
+          As the CEO of Lawbotics, John has been instrumental in the  development and growth of the company, leading a team of dedicated professionals who are passionate about creating a positive impact in the legal industry.
         </p>
         <p className="text-lg font-light mb-4">
           In his spare time, John enjoys reading, traveling, and spending time with his family. He is an avid learner and is always on the lookout for new challenges and opportunities to grow.
