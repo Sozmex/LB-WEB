@@ -1,13 +1,8 @@
 import React from "react";
 
-import ArchitectureIcon from "../images/service-icons/interior-design.svg";
-import RenovationIcon from "../images/service-icons/building-renovation.svg";
-import ConstructionIcon from "../images/service-icons/construction.svg";
+import Billy from "../images/billy.jpg";
 import Milan from "../images/milan.jpg";
 import Zach from "../images/zach2.jpg";
-import Daffy from "../images/daffy.png";
-import Billy from "../images/billy.jpg";
-import johnny from "../images/johnny.avif";
 import Eyebrow from "./eyebrow";
 import ServiceItem1 from "./serviceItem1";
 
@@ -20,25 +15,48 @@ const Services1 = () => {
             <div className="lg:col-span-8">
               <Eyebrow label="PEOPLE" />
               <h2 className="font-display md:text-display-l text-display-md pt-5">
-                
               </h2>
             </div>
           </div>
-          <div className="flex lg:flex-row flex-col gap-20 items-center justify-center"> {/* Add justify-center */}
+          <div className="flex lg:flex-row flex-col gap-20 items-center justify-center">
             <ServiceItem1 
               icon={Billy}
               title="Bill White"
               description="Solutions"
-                         />
+              bio={{
+                name: "Bill White",
+                paragraphs: [
+                  "Bill White is a visionary leader...",
+                  "As the CEO of Lawbotics...",
+                  "In his spare time..."
+                ]
+              }}
+            />
             <ServiceItem1
               icon={Milan}
               title="Milan Cheema"
               description="Partnerships"
-                         />
+              bio={{
+                name: "Milan Cheema",
+                paragraphs: [
+                  "Milan Cheema is a strategic thinker...",
+                  "As the Head of Partnerships...",
+                  "Outside of work..."
+                ]
+              }}
+            />
             <ServiceItem1
               icon={Zach}
               title="Zach Osgarby"
               description="Technology"
+              bio={{
+                name: "Zach Osgarby",
+                paragraphs: [
+                  "Zach Osgarby is a technology enthusiast...",
+                  "As the CTO...",
+                  "In his free time..."
+                ]
+              }}
             />
           </div>
         </div>
@@ -46,4 +64,5 @@ const Services1 = () => {
     </div>
   );
 };
+
 export default Services1;
