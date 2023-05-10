@@ -52,7 +52,7 @@ const Works = () => {
                 <Button1 label="Read More" link="Blog2" size="lg" />
               </div>
             </div>
-            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
+            <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">
               {data.allWorksJson.nodes.slice(1, 3).map((node) => (
                 <WorkItem
                   key={node.id}

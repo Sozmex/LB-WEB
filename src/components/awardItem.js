@@ -10,7 +10,7 @@ const AwardItem = ({ logo, title, year }) => {
         {/* <img src={logo} width={50} height={50} alt={title} /> */}
       </div>
       <div className="relative">
-        <p className="text-number-huge font-normal text-neutral-300 absolute mr-6 pt-1.5">{number}|</p>
+        <p className="text-display-xs font-normal text-neutral-300 absolute mr-6">{number}|</p>
         <div className="pl-10">
           <p className="text-body-xs font-normal text-neutral-300">{rest}</p>
           <p className="text-body-xs font-normal text-neutral-300 pb-2">{year}</p>

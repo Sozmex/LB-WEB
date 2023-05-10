@@ -40,7 +40,7 @@ module.exports = {
       body: ["Outfit", "sans-serif"],
     },
     fontSize: {
-      "display-2xl": [
+            "display-2xl": [
         "72px",
         {
           letterSpacing: "-0.025em",
