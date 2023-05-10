@@ -27,7 +27,7 @@ const Hero = () => {
         `}
         {/* {`
           .hero-image {
-            height: 30rem; *also add a gradient/fade into the header
+            height: 30rem; *also add a gradient/fade into the header 
           }
         `} */}
       </style>
