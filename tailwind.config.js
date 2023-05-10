@@ -6,7 +6,7 @@ module.exports = {
       textColor: ['group-hover'],
       transform: ['group-hover'],
       scale: ['group-hover'],
-      translate: ['group-hover'],
+      translate: ['responsive', 'group-hover', 'hover', 'focus'],
     }
   },
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
