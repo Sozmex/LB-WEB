@@ -22,9 +22,14 @@ const Hero = () => {
       <style>
         {`
           .hero-image {
-            height: 30rem;
+            height: 72.5rem;
           }
         `}
+        {/* {`
+          .hero-image {
+            height: 30rem; *also add a gradient/fade into the header
+          }
+        `} */}
       </style>
       <div className="w-full overflow-hidden relative">
         <GatsbyImage
