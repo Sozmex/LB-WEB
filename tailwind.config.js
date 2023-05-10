@@ -1,6 +1,14 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
+  variants: {
+    extend: {
+      textColor: ['group-hover'],
+      transform: ['group-hover'],
+      scale: ['group-hover'],
+      translate: ['group-hover'],
+    }
+  },
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
@@ -168,3 +176,5 @@ module.exports = {
     }),
   ],
 };
+
+
