@@ -21,7 +21,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-      "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "gatsby": "^4.1.0",
     "gatsby-image": "^3.11.0",
@@ -61,7 +61,7 @@
     "styled-components": "^5.2.3",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
-    "typography": "^0.16.19",
+    "typography": "^0.16.21",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
