@@ -18,6 +18,12 @@ Wordpress2016.overrideThemeStyles = () => {
     ".index *": {
       boxShadow: `none`,
     },
+    ".awarditem a": {
+      boxShadow: `none`,
+    },
+    ".awarditem *": {
+      boxShadow: `none`,
+    },
     "footer a": {
       boxShadow: `none`,
     },

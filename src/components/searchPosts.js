@@ -56,29 +56,29 @@ const SearchedPosts = ({ results }) =>
     </p>
   );
 
-const AllPosts = ({ posts }) => (
-  <div className={blogStyles.container}>
-    {posts.map(({ node }) => {
-      const title = node.frontmatter.title || node.fields.slug;
-      return (
-        <div key={node.fields.slug} className={blogStyles.postItem}>
-          <h3 className={blogStyles.postTitle}>
-            <Link className={blogStyles.postLink} to={`/blog${node.fields.slug}`}>
-              {title}
-            </Link>
-          </h3>
-          <small className={blogStyles.postDate}>{node.frontmatter.date}</small>
-          <p
-            className={blogStyles.postDescription}
-            dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
-            }}
-          />
-        </div>
-      );
-    })}
-  </div>
-);
+  const AllPosts = ({ posts }) => (
+    <div className={blogStyles.container}>
+      {posts.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug;
+        return (
+          <div key={node.fields.slug} className={blogStyles.postItem}>
+            <h3 className={blogStyles.postTitle}>
+              <Link className={blogStyles.postLink} to={`/blog${node.fields.slug}`}>
+                {title}
+              </Link>
+            </h3>
+            <small className={blogStyles.postDate}>{node.frontmatter.date}</small>
+            <p
+              className={blogStyles.postDescription}
+              dangerouslySetInnerHTML={{
+                __html: node.frontmatter.description || node.excerpt,
+              }}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
 
 const isJSON = (str) => {
   try {
