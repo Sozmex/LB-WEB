@@ -22,12 +22,12 @@ const Hero = () => {
       <style>
         {`
           .hero-image {
-            height: 72.5rem;
+            height: 30rem;
           }
         `}
         {/* {`
           .hero-image {
-            height: 30rem; *also add a gradient/fade into the header 
+            height: 72.5rem; *also add a gradient/fade into the header 
           }
         `} */}
       </style>

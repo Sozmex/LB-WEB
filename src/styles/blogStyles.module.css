@@ -86,3 +86,6 @@
   fill: #9aa0a6;
   margin-right: 1rem;
 }
+.noBoxShadow {
+  box-shadow: none !important;
+}

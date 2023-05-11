@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 
-import Header from "./header";
+import Header from "./headerblog";
 import Footer from "./footer";
 
 const Layoutblog = ({ children, navigate }) => (
