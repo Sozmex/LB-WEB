@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import Layoutblog from "../components/layoutblog";
 import SEO from "../components/seo";
 import SearchPosts from "../components/searchPosts";
+import Hero from "../components/heroblog";
 
 class Blog2 extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class Blog2 extends React.Component {
     return (
       <Layoutblog location={this.props.location} title={siteTitle} navigate={navigate}>
         <SEO title="All posts" />
+        <Hero></Hero>
         <SearchPosts
           posts={posts}
           localSearchBlog={localSearchBlog}

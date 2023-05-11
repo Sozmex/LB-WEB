@@ -1,4 +1,3 @@
-/* index.js*/
 import React, { useEffect } from "react";
 import { scroller } from "react-scroll";
 import { useLocation } from "@reach/router";
@@ -25,19 +24,6 @@ const IndexPage = () => {
         delay: 0,
         smooth: "easeInOutQuart",
       });
-    }
-  }, [location.state]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const scrollTarget = location.state?.scrollTarget;
-      if (scrollTarget) {
-        scroller.scrollTo(scrollTarget.substring(1), {
-          duration: 500,
-          delay: 0,
-          smooth: "easeInOutQuart",
-        });
-      }
     }
   }, [location.state]);
 

@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
@@ -102,7 +103,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
 
   return (
     <>
-      <div className={blogStyles.searchWrapper}>
+      <div style={{ marginTop: "20px" }} className={blogStyles.searchWrapper}>
         <div className={blogStyles.searchBarContainer}>
           <svg
             className={blogStyles.searchIcon}

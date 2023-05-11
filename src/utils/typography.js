@@ -12,6 +12,12 @@ Wordpress2016.overrideThemeStyles = () => {
     ".blog2 *": {
       boxShadow: `none`,
     },
+    ".index a": {
+      boxShadow: `none`,
+    },
+    ".index *": {
+      boxShadow: `none`,
+    },
     "footer a": {
       boxShadow: `none`,
     },
