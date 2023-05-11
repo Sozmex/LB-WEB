@@ -1,3 +1,4 @@
+/* index.js*/
 import React, { useEffect } from "react";
 import { scroller } from "react-scroll";
 import { useLocation } from "@reach/router";
