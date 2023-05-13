@@ -2,6 +2,7 @@
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
 excerpt: "The legal profession is known for its complexity,"
+description: "The legal profession is known for its complexity,"
 ---
 Wow! I love blogging so much already.
 
