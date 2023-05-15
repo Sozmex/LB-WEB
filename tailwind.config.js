@@ -41,6 +41,7 @@ module.exports = {
         500: "#7C7C7C",
         300: "#D9D9D6",
         100: "#E5E5E5",
+        50: "#f5f5f5"
       },
     },
     fontFamily: {

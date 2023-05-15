@@ -17,7 +17,7 @@ const Footer = () => {
     }
   `);
   return (
-    <footer className="bg-neutral-100"> {/* Add the bg-neutral-100 class here */}
+    <footer className="bg-neutral-50"> {/* Add the bg-neutral-100 class here */}
       <div className="container mx-auto">
         <div className=" md:mb-10 mb-5">
           <hr className="text-neutral-300"></hr>
