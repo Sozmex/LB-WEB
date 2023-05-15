@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useFlexSearch } from "react-use-flexsearch";
 import * as queryString from "query-string";
 import * as blogStyles from "../styles/blogStyles.module.css";
-import { rhythm } from "../utils/typography";
+
 
 const SearchInput = styled.input`
   display: flex;
