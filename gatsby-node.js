@@ -11,7 +11,6 @@ exports.onCreatePage = ({ page, actions }) => {
   }
 };
 
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -74,4 +73,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+}
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type Mdx implements Node {
+      body: String
+    }
+  `
+  createTypes(typeDefs)
 }
