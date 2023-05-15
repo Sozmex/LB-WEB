@@ -40,7 +40,7 @@ const IndexPage = () => {
       <Works />
       <SectionBreak />
       <Services1 />
-      <div className="bg-neutral-100" />
+      <div className="bg-neutral-50" />
     </Layout>
   );
 };
