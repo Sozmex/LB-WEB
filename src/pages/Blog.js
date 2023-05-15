@@ -3,7 +3,6 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layoutblog from "../components/layoutblog";
-import SEO from "../components/seo";
 import SearchPosts from "../components/searchPosts";
 import Hero from "../components/heroblog";
 
