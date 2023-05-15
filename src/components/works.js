@@ -49,7 +49,7 @@ const Works = () => {
                 />
               ))}
               <div className="xl:flex hidden items-start">
-                <Button1 label="Read More" link="Blog2" size="lg" />
+                <Button1 label="Read More" link="Blog" size="lg" />
               </div>
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10">

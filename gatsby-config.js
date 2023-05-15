@@ -80,8 +80,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
                 return {
                   title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
@@ -93,7 +93,7 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   sort: { order: DESC, fields: [frontmatter___date] }
                 ) {
                   edges {
@@ -153,7 +153,7 @@ module.exports = {
         background_color: `#7C3AED`,
         theme_color: `#7C3AED`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the  site.
+        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
       },
     },
     {

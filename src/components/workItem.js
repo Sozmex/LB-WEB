@@ -12,7 +12,7 @@ const WorkItem = ({ image, title, description }) => {
       <div className="flex flex-col self-stretch pt-6 transition-transform duration-300 group-hover:-translate-y-10">
         <h3 className="font-display text-display-md pb-4">
           <Link
-            to="/blog2"
+            to="/blog"
             className="group-hover:text-primary-600 transition duration-300"
           >
             {title}
