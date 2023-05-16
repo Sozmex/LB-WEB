@@ -21,7 +21,7 @@ const Header = ({ navigate }) => {
           <a href="/" className="block">
             <img className="h-16 w-auto" src={Logo} alt="Logo" />
           </a>
-            {/* <p className="text-body-xxl gap-4 font-medium text-neutral-700 hover:text-primary-600 px-4">
+            {/* <p className="text-body-xxl gap-4 font-medium text-neutral-700  hover:text-primary-600 px-4">
               Lawbotics
             </p> */}
           </div>
