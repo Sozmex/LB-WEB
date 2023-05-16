@@ -5,6 +5,7 @@ import { graphql } from "gatsby";
 import Layoutblog from "../components/layoutblog";
 import SearchPosts from "../components/searchPosts";
 import Hero from "../components/heroblog";
+import SEO from "./seo";
 
 class blog extends React.Component {
   render() {
