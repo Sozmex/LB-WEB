@@ -23,24 +23,13 @@ const Works1 = () => {
           }
         }
       }
-      allMdx(limit: 3, sort: { fields: [frontmatter___date], order: DESC }) {
-        nodes {
-          id
-          frontmatter {
-            title
-          }
-          excerpt
-        }
-      }
     }
   `);
 
-  const combinedData = data.allMdx.nodes.map((mdxNode, index) => {
+  const combinedData = data.allWorksJson.nodes.map((workNode) => {
     return {
-      id: mdxNode.id,
-      image: data.allWorksJson.nodes[index].image,
-      title: mdxNode.frontmatter.title,
-      description: mdxNode.excerpt,
+      id: workNode.id,
+      image: workNode.image,
     };
   });
 
@@ -59,9 +48,7 @@ const Works1 = () => {
               {combinedData.slice(0, 1).map((node) => (
                 <WorkItem
                   key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
+                  image={node.image}
                 />
               ))}
               <div className="xl:flex hidden items-start">
@@ -72,9 +59,7 @@ const Works1 = () => {
               {combinedData.slice(1, 3).map((node) => (
                 <WorkItem
                   key={node.id}
-                  image={getImage(node.image)}
-                  title={node.title}
-                  description={node.description}
+                  image={node.image}
                 />
               ))}
             </div>
