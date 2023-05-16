@@ -1,11 +1,11 @@
-/* Blog.js */
+/* Blog.js <SEO title="All posts" />*/
 import React from "react";
 import { graphql } from "gatsby";
 
 import Layoutblog from "../components/layoutblog";
 import SearchPosts from "../components/searchPosts";
 import Hero from "../components/heroblog";
-import SEO from "../seo";
+
 
 class blog extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class blog extends React.Component {
 
     return (
       <Layoutblog location={this.props.location} title={siteTitle} navigate={navigate}>
-        <SEO title="All posts" />
+        
         <Hero></Hero>
         <SearchPosts
           posts={posts}
