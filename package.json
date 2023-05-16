@@ -28,6 +28,7 @@
     "gatsby-plugin-feed": "^4.0.0",
     "gatsby-plugin-gatsby-cloud": "^4.1.0",
     "gatsby-plugin-google-analytics": "^4.1.0",
+    "gatsby-plugin-graphql": "^2.0.5",
     "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-local-search": "^2.0.0",
     "gatsby-plugin-manifest": "^4.1.0",
@@ -63,7 +64,9 @@
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
     "typography": "^0.16.21",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-wordpress-2016": "^0.16.19",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

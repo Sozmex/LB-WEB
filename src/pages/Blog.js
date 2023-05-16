@@ -1,58 +1,49 @@
-/* Blog.js */
-import React from "react";
-import { graphql } from "gatsby";
+import React, { useState } from "react";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/layout";
 
-import Layoutblog from "../components/layoutblog";
-import SEO from "../components/seo";
-import SearchPosts from "../components/searchPosts";
-import Hero from "../components/heroblog";
+export default function Blog({ data }) {
+  const [search, setSearch] = useState("");
+  const posts = data.allMdx.edges;
 
-class blog extends React.Component {
-  render() {
-    const { data, navigate, location } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMdx.edges;
-    const localSearchBlog = data.localSearchBlog;
+  const filteredPosts = posts.filter(post =>
+    post.node.frontmatter.title.toLowerCase().includes(search.toLowerCase())
+  );
 
-    return (
-      <Layoutblog location={this.props.location} title={siteTitle} navigate={navigate}>
-        <SEO title="All posts" />
-        <Hero></Hero>
-        <SearchPosts
-          posts={posts}
-          localSearchBlog={localSearchBlog}
-          navigate={navigate}
-          location={location}
-        />
-      </Layoutblog>
-    );
-  }
+  return (
+    <Layout>
+      <input
+        type="text"
+        value={search}
+        onChange={e => setSearch(e.target.value)}
+        placeholder="Search posts"
+      />
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+        {filteredPosts.map(({ node }) => (
+          <div key={node.id} style={{ width: "30%", margin: "1rem 0" }}>
+            <Link to={node.fields.slug}>
+              <h2>{node.frontmatter.title}</h2>
+              <p>{node.frontmatter.date}</p>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </Layout>
+  );
 }
-
-export default blog;
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    localSearchBlog {
-      index
-      store
-    }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          id
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
-            description
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }

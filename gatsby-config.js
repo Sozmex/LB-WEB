@@ -1,13 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Personal Blog`,
-    author: `Gatsby`,
+    title: `My Blog`,
     description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://lawboticswebnodedependenciesma.gatsbyjs.io/`,
-    excerpt: 'This is my excerpt',
-    social: {
-      twitter: `gatsbyjs`,
-    },
+    author: 'lawbotics'
   },
   flags: {
     //DEV_SSR: true,
@@ -21,7 +16,13 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
+    "gatsby-plugin-graphql",
     //`gatsby-plugin-eslint`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-local-search",
       options: {

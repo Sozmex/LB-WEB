@@ -1,27 +1,13 @@
-/* layoutblog.js */
 import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 
-import Header from "./headerblog";
-import Footer from "./footer";
-
-const Layoutblog = ({ children, navigate }) => (
-  <>
-    <Helmet>
-    </Helmet>
-    <Header navigate={navigate} />
-    <div className="min-h-screen flex flex-col"> {/* Add min-h-screen and flex classes */}
-      <main className="flex-grow">{children}</main> {/* Add flex-grow class */}
-      <Footer />
+const Layout1 = ({ title, children }) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      {children}
     </div>
-    
-  </>
-);
-
-Layoutblog.propTypes = {
-  children: PropTypes.node.isRequired,
-  navigate: PropTypes.func.isRequired,
+  );
 };
 
-export default Layoutblog;
+export default Layout1;
