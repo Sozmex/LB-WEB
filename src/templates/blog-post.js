@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-export default function BlogPost({ data, pageContext }) {
+const BlogPost = ({ data, pageContext }) => {
   const post = data.mdx
   const { previous, next } = pageContext
 
@@ -37,3 +37,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogPost

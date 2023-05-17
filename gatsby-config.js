@@ -1,3 +1,4 @@
+//gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: `My Blog`,

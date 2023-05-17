@@ -52,7 +52,7 @@ const Works1 = () => {
                 />
               ))}
               <div className="xl:flex hidden items-start">
-                <Button label="READ MORE" link="/" size="lg" />
+                <Button label="READ MORE" link="blog" size="lg" />
               </div>
             </div>
             <div className="xl:col-span-6 lg:col-span-8 flex flex-col xl:gap-24 md:gap-20 gap-10 xl:px-14">
@@ -65,7 +65,7 @@ const Works1 = () => {
             </div>
           </div>
           <div className="xl:hidden flex items-start">
-            <Button label="READ MORE" link="Blog" size="lg" />
+            <Button label="READ MORE" link="blog" size="lg" />
           </div>
         </div>
       </div>

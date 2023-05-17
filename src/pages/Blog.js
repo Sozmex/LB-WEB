@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 
+
 export default function Blog({ data }) {
   const [search, setSearch] = useState("");
   const posts = data.allMdx.edges;

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { scroller } from "react-scroll";
 import { useLocation } from "@reach/router";
 
-import Seo from "../components/seo";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Metrics from "../components/metrics";
@@ -29,7 +28,6 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Seo />
       <Hero />
       <Awards />
       <About />
