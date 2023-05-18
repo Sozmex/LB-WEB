@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 
-
-
-
 export default function Blog({ data }) {
   const [search, setSearch] = useState("");
   const posts = data.allMdx.edges;
@@ -15,23 +12,18 @@ export default function Blog({ data }) {
 
   return (
     <Layout>
-      <div className={styles.searchWrapper}>
-        <div className={styles.searchBarContainer}>
-          <input
-            className={styles.noBoxShadow}
-            type="text"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            placeholder="Search posts"
-          />
-        </div>
-      </div>
-      <div className={styles.container}>
+      <input
+        type="text"
+        value={search}
+        onChange={e => setSearch(e.target.value)}
+        placeholder="Search posts"
+      />
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
         {filteredPosts.map(({ node }) => (
-          <div key={node.id} className={styles.postItem}>
-            <Link to={node.fields.slug} className={styles.postLink}>
-              <h2 className={styles.postTitle}>{node.frontmatter.title}</h2>
-              <p className={styles.postDate}>{node.frontmatter.date}</p>
+          <div key={node.id} style={{ width: "30%", margin: "1rem 0" }}>
+            <Link to={node.fields.slug}>
+              <h2>{node.frontmatter.title}</h2>
+              <p>{node.frontmatter.date}</p>
             </Link>
           </div>
         ))}
