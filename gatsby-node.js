@@ -1,6 +1,6 @@
 //gatsby-node.js
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)  // Add this line to require `createFilePath`
+const { createFilePath } = require(`gatsby-source-filesystem`)  // Add this li ne to require `createFilePath`
 
 // Add the onCreateNode function
 exports.onCreateNode = ({ node, getNode, actions }) => {
