@@ -19,7 +19,6 @@ module.exports = {
     `gatsby-plugin-offline`,
     //`gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-mdx`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
